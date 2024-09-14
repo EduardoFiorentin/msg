@@ -3,8 +3,7 @@ let messages = [
     "Adoro o jeito que você faz tudo ficar mais bonito",
     "Você tem o sorriso mais lindo que já vi",
     "Seu jeito me encanta mais a cada dia",
-    "Não importa o quão nublados sejam os dias, sua luz interior sempre brilha mais forte!",
-    "Cada vez que você sorri, eu esqueço o que ia dizer... É meio difícil me concentrar perto de você",
+    "Cada vez que você sorri, eu esqueço o que ia dizer. É meio difícil me concentrar perto de você",
     "Eu estava tentando encontrar algo perfeito para dizer, mas aí percebi que só você já é perfeita",
     "Se eu pudesse escolher qualquer lugar para estar agora, seria ao seu lado",
     "Você tem um jeitinho que faz meu coração bater mais rápido toda vez que te vejo",
@@ -23,6 +22,5 @@ let emogis = [
 ]
 const idx_emg = Math.floor(Math.random() * emogis.length);
 
-let message = "Não há nada tão lindo quanto seus olhos"
 $(".message_text").html(`\"${messages[idx_msg]}\"`)
-$("#title").html(`Olááá${emogis[idx_emg]}`)
+$("#title").html(`Olááá ${emogis[idx_emg]}`)
