@@ -1,57 +1,105 @@
-/* Mensagem */
-/* .body {
-    background-color: rgb(255, 234, 238);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
-    font-family: "Handlee", cursive;
-    font-weight: bold;
-    color: rgb(122, 15, 15);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+html {
+    overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+#particulas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#flores {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* atrás de tudo */
+  pointer-events: none;
 }
 
 .container {
-    max-width: 500px;
-    width: 90%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  max-width: 600px;
+  width: 100vw;
+  height: 90vh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+    z-index: 2; 
+  position: relative;
+  overflow: hidden;
 }
 
-.title {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 20px;
+#titulo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.8rem;
+  white-space: nowrap;
+  color: #8b3a4d;
+  margin-bottom: 1.5rem;
+  min-height: min-content;
 }
 
-.message {
-    display: flex;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 2rem;
-
-} */
-
-
-/* Macaco */
-
-.body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+#mensagem {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.7rem;        /* 👈 menor que o título */
+  color: #5a2e35;
+  line-height: 1.6;
+  min-height: 120px;
+  height: 85vh;
+  font-weight: bold;
 }
 
-.imagem {
-    background-image: url(macaco.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    max-width: 600px;
-    height: 100vh;
-    max-height: 800px;
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0rem;
+  display: flex;
+  align-items: center;
+  min-height: min-content;
+}
+
+button {
+  background-color: #b04a66;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #d76a83;
 }
