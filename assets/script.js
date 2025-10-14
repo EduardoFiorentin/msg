@@ -17,7 +17,7 @@ const mensagens = [
   },
   {
     titulo: "Heróis Invisíveis",
-    texto: "Ser professor é ocupar um papel heroico silencioso: mover mentes, abrir portas, acender curiosidade ..."
+    texto: "Ser professora é ocupar um papel heroico silencioso: mover mentes, abrir portas, acender curiosidade ..."
   },
   {
     titulo: "Força e Resiliência",
